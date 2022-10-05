@@ -20,6 +20,14 @@ export const CartContent = styled(Dialog.Content, {
     fontWeight: 'bold',
     color: '$gray100',
     marginBottom: '2rem'
+  },
+
+  "> section": {
+    display:'flex',
+    flexDirection: 'column',
+    gap: '1.5rem',
+    flex: 1,
+    overflowY: 'auto'
   }
 })
 
