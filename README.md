@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" />
+</p>
 
-## Getting Started
+# 💻 Ignite Shop - E-Commerce
 
-First, run the development server:
+Venda de camisetas da ignite shop utilizando a Api da Stripe para armazenar/consumir as informações, além de redirecionamento para fazer o pagamento dos items.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- <a href="https://www.figma.com/file/RMIeUmaD9qZET3vfWmhmaI/Ignite-Shop-2.0-(Copy)?node-id=0%3A1" target="_blank">Layout Figma</a>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tecnologias
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- [NextJS](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Stitches](https://stitches.dev/)
+- [KeenSlider](https://keen-slider.io/)
+- [RadixUI](https://www.radix-ui.com/)
+- [Stripe](https://stripe.com/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 📑 Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Consumir Api da Stitches para pagamento e mostrar informações na aplicação;
+- Carrossel das imagens usando Keen Slider;
+- Rotas utilizando NextJS;
 
-## Learn More
+## 💡 Desafios
 
-To learn more about Next.js, take a look at the following resources:
+- Utilizar a listagem já criada da aplicação, mas a possibilidade de adicionar item ao carrinho da página do produto; ✔️
+- Salvar todos os itens selecionados na aplicação, e exibir o número de items no carrinho; ✔️
+- Criar component carrinho e modal dos items com Radix; ✔️
+- Mudar layout da página Success para quando tiver +1 camiseta vendida; ✔️
+- Enviar o carrinho que você armazenou na aplicação para a rota de checkout, onde irá gerar a sessão de checkout com os `line_items` necessários; ✔️
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🖼️ Previews
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| Home                               | Buy Product Modal                         |
+| ---------------------------------- | ----------------------------------------- |
+| <img src="./src/assets/home.PNG"/> | <img src="./src/assets/buyProduct.PNG" /> |
 
-## Deploy on Vercel
+| CartItems                                | StripeApi                                |
+| ---------------------------------------- | ---------------------------------------- |
+| <img src="./src/assets/cartItems.PNG" /> | <img src="./src/assets/stripeApi.PNG" /> |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| Success                                |
+| -------------------------------------- |
+| <img src="./src/assets/Success.PNG" /> |
